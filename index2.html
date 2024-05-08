@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tag Definition</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  dl {
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin: 0;
+    padding: 10px 0;
+  }
+  ol {
+    counter-reset: list;
+  }
+  ol li {
+    position: relative;
+    margin-left: 20px;
+    list-style: none;
+    padding-left: 30px;
+  }
+  ol li:before {
+    counter-increment: list;
+    content: counter(list) ".";
+    position: absolute;
+    left: 0;
+  }
+</style>
+</head>
+<body>
+
+<dl>
+  <dt>Tag</dt>
+  <dd>Noun</dd>
+  <ol>
+    <li>A label attached to someone or something for the purpose of identification or to give other information.</li>
+    <ul>
+      <li>"Name tag"</li>
+      <li>"Price tag"</li>
+    </ul>
+  </dl>
+
+</body>
+</html>
