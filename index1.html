@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Task List</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  ul {
+    width: 300px;
+  }
+  li {
+    background-color: #add8e6;
+    padding: 10px;
+    list-style-type: none;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  li:nth-child(odd) {
+    background-color: #b2dfee;
+  }
+  li.completed {
+    background-color: #d3d3d3;
+    text-decoration: line-through;
+  }
+  li.completed::before {
+    content: '✔';
+    position: absolute;
+    left: -25px;
+    top: 0;
+  }
+  li::before {
+    content: '○';
+    position: absolute;
+    left: -25px;
+    top: 0;
+  }
+  li::after {
+    content: '✖';
+    position: absolute;
+    right: -25px;
+    top: 0;
+    color: red;
+  }
+</style>
+</head>
+<body>
+
+<h2>My Task List</h2>
+<ul>
+  <li class="completed">Task 1</li>
+  <li>Task 2</li>
+  <li class="completed">Task 3</li>
+  <li>Task 4</li>
+</ul>
+
+</body>
+</html>
